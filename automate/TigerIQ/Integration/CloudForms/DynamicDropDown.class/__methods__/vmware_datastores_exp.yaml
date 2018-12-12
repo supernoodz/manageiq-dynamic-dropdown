@@ -1,0 +1,21 @@
+---
+object_type: method
+version: 1.0
+object:
+  attributes:
+    name: vmware_datastores_exp
+    display_name: 
+    description: 
+    scope: instance
+    language: ruby
+    location: expression
+    data: |
+      ---
+      :db: Storage
+      :expression:
+        INCLUDES:
+          field: Storage-ems_ref
+          value: datastore
+        :token: 1
+    options: {}
+  inputs: []
